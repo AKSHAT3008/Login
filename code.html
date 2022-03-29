@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+          .login-form-field {
+            border-style: inset;
+            border-color: #000307;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            outline: none;
+            padding: 5px 5px 5px 5px;
+          }
+          body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      background-image:url('https://www.epiqglobal.com/epiq/media/about/hero-data-security.jpg')
+          }"
+    </style>
+    <script>
+      setInterval(code, 60000);
+
+      function code() {
+        var min = 100000;
+        var max = 900000;
+        var num = Math.floor(Math.random() * min) + max;
+        var textbox3 = document.getElementById("textbox3");
+        textbox3.value = num;
+      }
+    </script>
+    <body>
+      <input
+        type="submit"
+        class="login-form-field"
+        value="START"
+        onclick="code()"
+      />
+      <input
+        type="text"
+        name="textbox3"
+        id="textbox3"
+        class="login-form-field"
+        readonly="true"
+      />
+    </body>
+  </head>
+</html>
